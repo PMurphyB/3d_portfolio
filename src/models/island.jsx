@@ -550,10 +550,8 @@ const Island = (props) => {
           material={materials['Material.016']}
         />
       </group>
-    </group>
+    </a.group>
   )
 }
-
-useGLTF.preload('/finalisland_v4.glb')
 
 export default Island;
