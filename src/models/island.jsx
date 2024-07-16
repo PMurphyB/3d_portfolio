@@ -11,7 +11,7 @@ import islandScene from '../assets/3d/island.glb'
 
 const Island = (props) => {
     const islandRef = useRef();
-  const { nodes, materials } = useGLTF('/finalisland_v4.glb')
+  const { nodes, materials } = useGLTF(islandScene);
   return (
     <a.group ref={islandRef} {...props}>
       <group position={[-1.141, 0.756, -5.711]} rotation={[-Math.PI, 1.23, -Math.PI]} scale={0.01}>
