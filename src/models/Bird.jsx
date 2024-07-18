@@ -4,7 +4,7 @@ const Bird = () => {
   return (
     <mesh>
         
-    </mesh>>
+    </mesh>
   )
 }
 
