@@ -16,32 +16,22 @@ const Island = (props) => {
     <a.group ref={islandRef} {...props}>
       <group position={[-1.064, 0.756, -6.327]} rotation={[-Math.PI, 1.23, -Math.PI]} scale={0.01}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.nascar_1.geometry}
           material={materials['Material.013']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.nascar_2.geometry}
           material={materials['Material.017']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.nascar_3.geometry}
           material={materials['Material.018']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.nascar_4.geometry}
           material={materials['Material.019']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.nascar_5.geometry}
           material={materials['Material.020']}
         />
@@ -50,22 +40,16 @@ const Island = (props) => {
         <group position={[-1.095, 0, 0.309]}>
           <group position={[0.085, 0, 1.324]}>
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Object_3.geometry}
               material={materials.base}
             />
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Object_3_1.geometry}
               material={materials['Material.025']}
             />
           </group>
         </group>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Object_18.geometry}
           material={materials.base}
           position={[-0.05, 0.087, -0.573]}
@@ -78,32 +62,22 @@ const Island = (props) => {
           scale={0.331}>
           <group position={[0.526, 0.54, -2.635]} scale={1.361}>
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Saddle_Saddle_0_1.geometry}
               material={materials['Material.012']}
             />
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Saddle_Saddle_0_2.geometry}
               material={materials['Material.024']}
             />
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Saddle_Saddle_0_3.geometry}
               material={materials['Material.021']}
             />
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Saddle_Saddle_0_4.geometry}
               material={materials['Material.022']}
             />
             <mesh
-              castShadow
-              receiveShadow
               geometry={nodes.Saddle_Saddle_0_5.geometry}
               material={materials['Material.023']}
             />
@@ -112,21 +86,16 @@ const Island = (props) => {
       </group>
       <group scale={[3, 0.544, 3]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube.geometry}
           material={materials.Material}
         />
         <mesh
-          castShadow
-          receiveShadow
+
           geometry={nodes.Cube_1.geometry}
           material={materials['Material.001']}
         />
       </group>
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.River.geometry}
         material={materials['Material.002']}
         position={[-0.047, 0.898, 0]}
@@ -135,42 +104,30 @@ const Island = (props) => {
       />
       <group position={[-3.231, 1.11, 3.027]} rotation={[0, 0.477, 0]} scale={0.134}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube002.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube002_1.geometry}
           material={materials.Material}
         />
       </group>
       <group position={[-3.406, 1.063, 2.313]} rotation={[0, -0.195, 0]} scale={0.082}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube003.geometry}
           material={materials['Material.004']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube003_1.geometry}
           material={materials.Material}
         />
       </group>
       <group position={[-2.344, 1.091, 3.603]} rotation={[0, -0.808, 0]} scale={0.092}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube004.geometry}
           material={materials['Material.004']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube004_1.geometry}
           material={materials.Material}
         />
@@ -180,21 +137,15 @@ const Island = (props) => {
         rotation={[0, 0.263, 0]}
         scale={[0.077, 0.057, 0.077]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube005.geometry}
           material={materials['Material.004']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube005_1.geometry}
           material={materials.Material}
         />
       </group>
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock1.geometry}
         material={materials['Material.005']}
         position={[-3.292, 1.31, -3.379]}
@@ -202,8 +153,6 @@ const Island = (props) => {
         scale={-0.249}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock2.geometry}
         material={materials['Material.005']}
         position={[-3.419, 1.321, -3.072]}
@@ -211,8 +160,6 @@ const Island = (props) => {
         scale={-0.146}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock3.geometry}
         material={materials['Material.005']}
         position={[-3.375, 0.988, -2.808]}
@@ -220,8 +167,6 @@ const Island = (props) => {
         scale={-0.348}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock4.geometry}
         material={materials['Material.005']}
         position={[-3.357, 1.185, -2.372]}
@@ -229,14 +174,10 @@ const Island = (props) => {
       />
       <group position={[-1.666, 1.049, -3.102]} rotation={[0, -0.336, 0]} scale={0.149}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube006.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Material}
         />
@@ -246,14 +187,10 @@ const Island = (props) => {
         rotation={[0, -0.511, 0]}
         scale={[0.134, 0.172, 0.134]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube007.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube007_1.geometry}
           material={materials.Material}
         />
@@ -263,42 +200,30 @@ const Island = (props) => {
         rotation={[0, -1.32, 0]}
         scale={[0.134, 0.088, 0.134]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube008.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube008_1.geometry}
           material={materials.Material}
         />
       </group>
       <group position={[-2.352, 1.21, -3.6]} rotation={[0, 0.505, 0]} scale={0.099}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube009.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube009_1.geometry}
           material={materials.Material}
         />
       </group>
       <group position={[-1.645, 1.04, -2.113]} rotation={[0, -0.195, 0]} scale={0.082}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube010.geometry}
           material={materials['Material.004']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube010_1.geometry}
           material={materials.Material}
         />
@@ -308,69 +233,49 @@ const Island = (props) => {
         rotation={[0, -0.342, 0]}
         scale={[0.083, 0.084, 0.083]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube011.geometry}
           material={materials['Material.007']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube011_1.geometry}
           material={materials['Material.006']}
         />
       </group>
       <group position={[2.264, 2.374, -3.51]} rotation={[0.06, -0.094, 0.203]} scale={0.315}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Icosphere007.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Icosphere007_1.geometry}
           material={materials['Material.004']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Icosphere007_2.geometry}
           material={materials['Material.006']}
         />
       </group>
       <group position={[0.92, 2.029, -2.445]} rotation={[2.782, 1.4, -2.59]} scale={0.205}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Icosphere009.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Icosphere009_1.geometry}
           material={materials['Material.004']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Icosphere009_2.geometry}
           material={materials['Material.006']}
         />
       </group>
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock5.geometry}
         material={materials['Material.003']}
         position={[-2.771, 1.058, -2.228]}
         scale={-0.181}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock6.geometry}
         material={materials['Material.003']}
         position={[-2.562, 0.973, -1.941]}
@@ -378,8 +283,6 @@ const Island = (props) => {
         scale={-0.227}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock14.geometry}
         material={materials['Material.003']}
         position={[-2.55, 0.977, -2.896]}
@@ -387,8 +290,6 @@ const Island = (props) => {
         scale={-0.227}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock15.geometry}
         material={materials['Material.003']}
         position={[-2.956, 1.174, -3.509]}
@@ -396,8 +297,6 @@ const Island = (props) => {
         scale={-0.172}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock16.geometry}
         material={materials['Material.003']}
         position={[-3.134, 1.02, -1.329]}
@@ -405,8 +304,6 @@ const Island = (props) => {
         scale={-0.152}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush1.geometry}
         material={materials['Material.003']}
         position={[2.14, 1.009, -2.927]}
@@ -414,8 +311,6 @@ const Island = (props) => {
         scale={-0.227}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush2.geometry}
         material={materials['Material.003']}
         position={[1.567, 1.056, -2.314]}
@@ -423,8 +318,6 @@ const Island = (props) => {
         scale={-0.152}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush3.geometry}
         material={materials['Material.003']}
         position={[2.705, 1.021, -3.779]}
@@ -432,8 +325,6 @@ const Island = (props) => {
         scale={-0.227}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush4.geometry}
         material={materials['Material.003']}
         position={[3.206, 1.068, -3.106]}
@@ -441,8 +332,6 @@ const Island = (props) => {
         scale={-0.152}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush5.geometry}
         material={materials['Material.003']}
         position={[1.548, 1.094, -2.943]}
@@ -450,24 +339,18 @@ const Island = (props) => {
         scale={-0.227}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock8.geometry}
         material={nodes.Rock8.material}
         position={[-2.05, 0.856, 0.626]}
         scale={0.176}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock9.geometry}
         material={nodes.Rock9.material}
         position={[-1.484, 0.834, 0.171]}
         scale={0.257}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock10.geometry}
         material={nodes.Rock10.material}
         position={[-1.825, 0.741, -0.502]}
@@ -475,16 +358,12 @@ const Island = (props) => {
         scale={0.257}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock11.geometry}
         material={nodes.Rock11.material}
         position={[0.977, 0.85, -0.42]}
         scale={0.257}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock12.geometry}
         material={nodes.Rock12.material}
         position={[2.87, 0.637, -0.127]}
@@ -492,8 +371,6 @@ const Island = (props) => {
         scale={0.219}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock13.geometry}
         material={nodes.Rock13.material}
         position={[1.779, 0.814, 0.546]}
@@ -501,8 +378,6 @@ const Island = (props) => {
         scale={0.176}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Rock14001.geometry}
         material={nodes.Rock14001.material}
         position={[1.908, 0.799, -0.169]}
@@ -510,15 +385,11 @@ const Island = (props) => {
         scale={0.257}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Firepit.geometry}
         material={materials['Material.008']}
         position={[1.62, 1.289, 2.734]}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush11.geometry}
         material={nodes.Bush11.material}
         position={[3.547, 1.238, 1.809]}
@@ -526,8 +397,6 @@ const Island = (props) => {
         scale={0.116}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Bush12.geometry}
         material={nodes.Bush12.material}
         position={[3.27, 1.258, 1.606]}
@@ -536,21 +405,15 @@ const Island = (props) => {
       />
       <group position={[1.418, 1.336, 2.318]} rotation={[0.007, 0.313, 0.024]} scale={0.134}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Plane012.geometry}
           material={materials['Material.009']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Plane012_1.geometry}
           material={materials['Material.010']}
         />
       </group>
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Fire.geometry}
         material={materials['Material.011']}
         position={[1.555, 1.534, 2.745]}
@@ -559,63 +422,45 @@ const Island = (props) => {
       />
       <group position={[5.608, 0.832, -3.037]} rotation={[0, 0.302, 0]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube012.geometry}
           material={materials.Material}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube012_1.geometry}
           material={materials['Material.001']}
         />
       </group>
       <group position={[-1.243, 0.832, -5.955]} rotation={[0, 0.17, 0]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube014.geometry}
           material={materials.Material}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube014_1.geometry}
           material={materials['Material.001']}
         />
       </group>
       <group position={[-6.251, 0.832, 0.072]} rotation={[0, -0.016, 0]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube015.geometry}
           material={materials.Material}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube015_1.geometry}
           material={materials['Material.001']}
         />
       </group>
       <group position={[2.374, 0.832, 5.753]} rotation={[0, 0.386, 0]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube016.geometry}
           material={materials.Material}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube016_1.geometry}
           material={materials['Material.001']}
         />
       </group>
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Road.geometry}
         material={nodes.Road.material}
         position={[-6.395, 0.8, 0.186]}
@@ -624,32 +469,22 @@ const Island = (props) => {
       />
       <group position={[6.026, 1.096, -3.347]} rotation={[-1.564, 0.003, 0.386]} scale={0.136}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube_0_1.geometry}
           material={materials['Material.006']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube_0_2.geometry}
           material={materials['Material.014']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube_0_3.geometry}
           material={materials['Material.015']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube_0_4.geometry}
           material={materials['Material.003']}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube_0_5.geometry}
           material={materials['Material.016']}
         />
