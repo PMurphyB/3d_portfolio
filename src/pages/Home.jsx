@@ -41,6 +41,7 @@ const Home = () => {
           intensity={ 1 } />
 
           <Bird />
+          <Eagle />
           <Sky />
           <Island 
             position={islandPosition}
