@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 
@@ -28,12 +28,29 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   }
 
+  const adjustEagleForScreenSize = () => {
+    let screenScale, screenPosition;
+
+    if(window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -4]
+    }
+
+    return [screenScale, screenPosition];
+  }
+
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+  const [eagleScale, eaglePosition] = adjustEagleForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
       <Canvas 
-      className='w-full h-screen bg-transparent'
+      className={`w-full h-screen bg-transparent ${
+        isRotating ? "cursor-grabbing" : "cursor-grab"
+      }`}
       camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
@@ -48,8 +65,15 @@ const Home = () => {
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
           />
-          <Eagle />
+          <Eagle 
+            isRotating={isRotating}
+            eagleScale={eagleScale}
+            eaglePosition={eaglePosition}
+            rotation={[0, 20, 0]}
+          />
         </Suspense>
       </Canvas>
     </section>
