@@ -12,6 +12,8 @@ import Eagle from '../models/Eagle';
       </div> */}
 
 const Home = () => {
+  const [isRotating, setIsRotating] = useState(false);
+
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
@@ -41,13 +43,13 @@ const Home = () => {
           intensity={ 1 } />
 
           <Bird />
-          <Eagle />
           <Sky />
           <Island 
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
           />
+          <Eagle />
         </Suspense>
       </Canvas>
     </section>
