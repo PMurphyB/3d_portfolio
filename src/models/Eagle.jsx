@@ -1,13 +1,15 @@
-import React from 'react'
+import { useRef } from 'react'
 
-import planeScene from '../assets/3d/eagle.glb';
-import { useGLTF } from '@react-three/drei';
+import eagleScene from '../assets/3d/eagle.glb';
+import { useAnimations, useGLTF } from '@react-three/drei';
 
 const Eagle = ({ isRotating, ...props }) => {
-  const { scene, animations } = useGLTF(planeScene)
+  const ref = useRef();
+  const { scene, animations } = useGLTF(eagleScene);
+  const { actions } = useAnimations(animations, ref);
 
   return (
-    <mesh {...props}>
+    <mesh {...props} ref={ref}>
         <primitive object={scene} />
     </mesh>
   )
