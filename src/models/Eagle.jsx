@@ -9,12 +9,8 @@ const Eagle = ({ isRotating, ...props }) => {
   const { actions } = useAnimations(animations, ref);
 
   useEffect(() => {
-    if(isRotating) {
-      actions['Breeze'].play();
-    } else {
-      actions['Breeze'].stop();
-    }
-  }, [actions, isRotating])
+    actions['Breeze'].play();
+  }, [])
 
   return (
     <mesh {...props} ref={ref}>
