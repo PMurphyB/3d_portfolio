@@ -15,6 +15,20 @@ const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
 
+  const adjustEagleForScreenSize = () => {
+    let screenScale, screenPosition;
+
+    if(window.innerWidth < 768) {
+      screenScale = [0.00001, 0.00001, 0.00001];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [0.00001, 0.00001, 0.00001];
+      screenPosition = [0, -4, -4]
+    }
+
+    return [screenScale, screenPosition];
+  }
+
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -3, -43];
@@ -29,22 +43,9 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   }
 
-  const adjustEagleForScreenSize = () => {
-    let screenScale, screenPosition;
-
-    if(window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -10, 0];
-    } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -10, -4]
-    }
-
-    return [screenScale, screenPosition];
-  }
-
-  const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
   const [eagleScale, eaglePosition] = adjustEagleForScreenSize();
+  const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+
 
   return (
     <section className="w-full h-screen relative">
