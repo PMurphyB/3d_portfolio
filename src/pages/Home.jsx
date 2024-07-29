@@ -18,13 +18,16 @@ const Home = () => {
   const adjustEagleForScreenSize = () => {
     let screenScale, screenPosition;
 
-    if(window.innerWidth < 768) {
+    /*if(window.innerWidth < 768) {
       screenScale = [0.00001, 0.00001, 0.00001];
       screenPosition = [0, -1.5, 0];
     } else {
       screenScale = [0.00001, 0.00001, 0.00001];
       screenPosition = [0, -4, -4]
-    }
+    }*/
+
+    screenScale = [0.00001, 0.00001, 0.00001];
+    screenPosition = [0, -4, -4]
 
     return [screenScale, screenPosition];
   }
