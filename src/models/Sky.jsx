@@ -4,6 +4,8 @@ import { useFrame } from '@react-three/fiber'
 
 import skyScene from "../assets/3d/sky.glb"
 
+// Model from https://sketchfab.com/3d-models/free-skybox-in-the-cloud-b270497defe24f9cb497b9a075eeb28f
+
 const Sky = ({ isRotating }) => {
     const sky = useGLTF(skyScene);
     const skyRef = useRef()

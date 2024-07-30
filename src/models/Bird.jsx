@@ -4,11 +4,12 @@ import birdScene from "../assets/3d/bird.glb";
 import { useAnimations, useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
+//Model from https://sketchfab.com/3d-models/birds-3a9bb97be78944f9bffc23fb25c2154e
+
 const Bird = () => {
   const birdRef = useRef();
   const { scene, animations } = useGLTF(birdScene);
   const { actions } = useAnimations(animations, birdRef);
-  
 
   useEffect(() => {
     actions['Scene'].play();
