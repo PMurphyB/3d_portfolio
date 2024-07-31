@@ -82,16 +82,16 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props}) => {
 
       switch (true) {
         case normalizedRotation >= 4.1 && normalizedRotation <= 4.4 :
-          setCurrentStage(4);
+          setCurrentStage(1);
           break;
         case normalizedRotation >= 2.8 && normalizedRotation <= 3.1 :
-          setCurrentStage(3);
-          break;
-        case normalizedRotation >= 1.4 && normalizedRotation <= 1.7 :
           setCurrentStage(2);
           break;
+        case normalizedRotation >= 1.4 && normalizedRotation <= 1.7 :
+          setCurrentStage(3);
+          break;
         case normalizedRotation >= 5.7 && normalizedRotation <= 6 :
-          setCurrentStage(1);
+          setCurrentStage(4);
           break;
         default :
           setCurrentStage(null);
