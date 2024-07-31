@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { arrow } from '../assets/icons';
+import { arrow } from '../assets/icons'
 
 const InfoBox = ({ text, link, btnText }) => (
   <div className="info_box">
@@ -13,22 +13,33 @@ const InfoBox = ({ text, link, btnText }) => (
 )
 
 const renderContent = {
-  1: (
+  5: (
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
       Hi I am <span className="font-semibold">Payton</span> 👋
       <br/>
       A Software Engineer from Olathe, KS
     </h1>
   ),
-  2: (
+  1: (
     <InfoBox 
-      text="One of my favorite things to do is play music!  I have competed in multiple competitions and have played across the country."
+      text="One of my favorite things to do is play music!  Learn more below:"
       link="/about"
       btnText="Learn more"
     />
   ),
+  2: (
+    <InfoBox 
+      text="I love all things motorsports, and it's one of my hobbies! "
+      link="/about"
+      btnText="Learn more about me"
+    />
+  ),
   3: (
-    <h1>3</h1>
+    <InfoBox 
+      text="I love all things motorsports, and it's one of my hobbies! "
+      link="/about"
+      btnText="Learn more about me"
+    />
   ),
   4: (
     <h1>4</h1>
