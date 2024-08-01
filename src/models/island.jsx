@@ -65,7 +65,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props}) => {
       setIsRotating(false);
     }
   }
-
+  
   useFrame(() => {
     if(!isRotating) {
       rotationSpeed.current *= dampingFactor;
@@ -81,6 +81,9 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props}) => {
       const normalizedRotation = ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
       switch (true) {
+        case normalizedRotation >= 4.5 && normalizedRotation <= 5 :
+          setCurrentStage(5);
+          break;
         case normalizedRotation >= 4.1 && normalizedRotation <= 4.4 :
           setCurrentStage(1);
           break;
