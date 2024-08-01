@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { arrow } from '../assets/icons'
 
+//Fix This!!!
 const InfoBox = ({ text, link, btnText }) => (
   <div className="info_box">
     <p className="font-medium sm:text-xl text-center">{text}</p>
