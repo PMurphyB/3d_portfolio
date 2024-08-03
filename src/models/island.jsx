@@ -80,6 +80,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props}) => {
 
       const normalizedRotation = ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
+      //Possibly adjust normalizedRotation
       switch (true) {
         case normalizedRotation >= 4.5 && normalizedRotation <= 5 :
           setCurrentStage(5);
