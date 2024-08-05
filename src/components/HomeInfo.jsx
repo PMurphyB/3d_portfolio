@@ -2,18 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { arrow } from '../assets/icons'
 
-//Fix This!!!
 const InfoBox = ({ text, link, btnText }) => (
   <div className="info_box">
-    <p className="font-medium sm:text-xl text-center">{text}</p>
-    <Link to={link} className="neo-brutalism-white neo-btn">
+    {text}
+    <Link to={link}>
       {btnText}
-      <img src={arrow} className="w-4 h-4 object-contain" />
     </Link>
   </div>
 )
 
-// Readjust currentStage render?
 const renderContent = {
   5: (
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
@@ -23,25 +20,13 @@ const renderContent = {
     </h1>
   ),
   1: (
-    <InfoBox 
-      text="One of my favorite things to do is play music!  Learn more below:"
-      link="/about"
-      btnText="Learn more"
-    />
+    <InfoBox />
   ),
   2: (
-    <InfoBox 
-      text="I love all things motorsports, and it's one of my hobbies! "
-      link="/about"
-      btnText="Learn more about me"
-    />
+    <h1>2</h1>
   ),
   3: (
-    <InfoBox 
-      text="I love all things motorsports, and it's one of my hobbies! "
-      link="/about"
-      btnText="Learn more about me"
-    />
+    <h1>3</h1>
   ),
   4: (
     <h1>4</h1>
