@@ -12,15 +12,8 @@ const InfoBox = ({ text, link, btnText }) => (
 )
 
 const renderContent = {
-  5: (
-    <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
-      Hi I am <span className="font-semibold">Payton</span> 👋
-      <br/>
-      A Software Engineer from Olathe, KS
-    </h1>
-  ),
   1: (
-    <InfoBox />
+    <h1>1</h1>
   ),
   2: (
     <h1>2</h1>
@@ -31,6 +24,9 @@ const renderContent = {
   4: (
     <h1>4</h1>
   ),
+  5: (
+    <h1>5</h1>
+  )
 }
 
 const HomeInfo = ({ currentStage }) => {
