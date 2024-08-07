@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { arrow } from '../assets/icons'
 
+// Figure out why this isn't working!!!
 const InfoBox = ({ text, link, btnText }) => (
   <div className="info_box">
     {text}
