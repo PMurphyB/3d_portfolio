@@ -12,6 +12,7 @@ const InfoBox = ({ text, link, btnText }) => (
   </div>
 )
 
+// Update the popups
 const renderContent = {
   1: (
     <h1>1</h1>
