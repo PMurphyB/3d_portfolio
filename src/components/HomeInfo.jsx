@@ -28,6 +28,24 @@ const HomeInfo = ({ currentStage }) => {
     );
   }
 
+  if (currentStage === 3) {
+    return (
+      <div className='info-box'>
+        <p className='font-medium sm:text-xl text-center'>
+          I love all things motorsports! <br/> Want to know more about me?
+        </p>
+
+        <Link to='/about' className='neo-brutalism-white neo-btn'>
+          Find out more
+          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+        </Link>
+
+      </div>
+    );
+  }
+
+  
+
   return null
 
 }
