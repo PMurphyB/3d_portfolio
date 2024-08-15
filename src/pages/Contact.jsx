@@ -25,19 +25,7 @@ const Contact = () => {
             onBlue={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
-            Your Message
-            <textarea
-            name='message'
-            rows={4}
-            className='textarea'
-            placeholder='Let me know what I can do for you!'
-            required value={form.message}
-            onChange={handleChange}
-            onFocus={handleFocus}
-            onBlue={handleBlur}
-            />
-          </label>
+
           <label className='text-black-500 font-semibold'>
             Name
             <input type='text'
@@ -50,6 +38,20 @@ const Contact = () => {
             onBlue={handleBlur}
             />
           </label>
+
+          <label className='text-black-500 font-semibold'>
+            Name
+            <input type='text'
+            name='name'
+            className='input'
+            placeholder='John'
+            required value={form.name}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            onBlue={handleBlur}
+            />
+          </label>
+
         </form>
       </div>
     </section>
