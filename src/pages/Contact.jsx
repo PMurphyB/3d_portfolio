@@ -27,12 +27,12 @@ const Contact = () => {
           </label>
 
           <label className='text-black-500 font-semibold'>
-            Name
-            <input type='text'
-            name='name'
+            Email
+            <input type='emaio'
+            name='email'
             className='input'
-            placeholder='John'
-            required value={form.name}
+            placeholder='john@smith.com'
+            required value={form.email}
             onChange={handleChange}
             onFocus={handleFocus}
             onBlue={handleBlur}
