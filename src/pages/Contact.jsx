@@ -41,7 +41,7 @@ const Contact = () => {
 
           <label className='text-black-500 font-semibold'>
             Email
-            <input type='emaio'
+            <input type='email'
             name='email'
             className='input'
             placeholder='john@smith.com'
