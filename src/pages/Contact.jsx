@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react'
 
+//Add email.js
+
 const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' })
