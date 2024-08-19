@@ -15,6 +15,8 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
   };
+
+  // Add the rest of the functions 
   const handleFocus = () => {};
   const handleBlur = () => {};
 
