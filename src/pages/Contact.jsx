@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 
-//Add email.js
+//Import email.js
 
 const Contact = () => {
   const formRef = useRef(null);
