@@ -14,7 +14,9 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    emailjs.sendForm()
+    emailjs.sendForm(
+      
+    )
   };
 
   const handleFocus = () => {};
