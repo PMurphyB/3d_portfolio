@@ -26,7 +26,8 @@ const Contact = () => {
       },
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() => {
-      setIsLoading(false)
+      setIsLoading(false);
+      // Show success message
     })
   };
 
