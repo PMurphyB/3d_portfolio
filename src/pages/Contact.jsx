@@ -29,6 +29,8 @@ const Contact = () => {
       setIsLoading(false);
       // Show success message
       // Hide an alert
+
+      setForm({ name: '', email: '', message: '' });
     }).catch((error) => {
       setIsLoading(false);
       console.log(error);
