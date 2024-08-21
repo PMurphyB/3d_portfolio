@@ -6,13 +6,20 @@ Source: https://sketchfab.com/3d-models/low-poly-eagle-60578c2b11064a2da915ea899
 Title: Low Poly Eagle
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
-export function Model(props) {
+import scene from '../assets/3d/eagle2.glb'
+
+export function Model({ currentAnimation, ...props }) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/eagle2.glb')
   const { actions } = useAnimations(animations, group)
+
+    useEffect(() => {
+
+    }, [action, currentAnimation])
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
