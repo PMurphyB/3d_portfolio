@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
+import { Canvas } from '@react-three/fiber'
+
 const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -105,7 +107,9 @@ const Contact = () => {
       </div>
 
       <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+        <Canvas>
 
+        </Canvas>
       </div>
     </section>
   )
