@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber'
 
 import Loader from '../components/Loader';
 
+// Figure out why this isn't working.
 import Fox from '../models/Fox';
 
 const Contact = () => {
