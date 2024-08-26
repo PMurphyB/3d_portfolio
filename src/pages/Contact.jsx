@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber'
 
 import Loader from '../components/Loader';
 
-// Figure out why this isn't working.  Add index.js to models?
+// Figure out why this isn't working.  Add index.js to models
 import Fox from '../models/Fox';
 
 const Contact = () => {
