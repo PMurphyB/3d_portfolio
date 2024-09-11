@@ -5,7 +5,6 @@ import { Canvas } from '@react-three/fiber'
 
 import Loader from '../components/Loader';
 
-// Figure out why this isn't working.  Add index.js to models
 import Fox from '../models/Fox';
 
 const Contact = () => {
@@ -107,7 +106,6 @@ const Contact = () => {
           >
             {isLoading ? 'Sending...' : 'Send Message'}
           </button>
-
         </form>
       </div>
 
@@ -117,9 +115,13 @@ const Contact = () => {
             position:[0, 0, 5]
           }}
         >
-        // Add Fox Animation
+
           <Suspense fallback={<Loader />}>
-            <Fox />
+            <Fox 
+              position={[0.5, 0.35, 0]}
+              rotation={[12, 0, 0]}
+              scale={[0.5, 0.5, 0.5]}
+            />
           </Suspense>
         </Canvas>
       </div>
