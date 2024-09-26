@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
 Title: Fox
 */
 
-// Update Fox Model in Contact Page
+// Update Fox Model in Contact Page.  Currently broken.
 
 import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
