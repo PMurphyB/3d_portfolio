@@ -123,7 +123,7 @@ const Contact = () => {
             <Fox 
               position={[0.5, 0.35, 0]}
               rotation={[12.6, -0.6, 0]}
-              scale={[0.5, 0.5, 0.5]}
+              scale={[1, 1, 1]}
             />
           </Suspense>
         </Canvas>
