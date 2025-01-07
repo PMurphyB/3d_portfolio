@@ -11,6 +11,7 @@ const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [isLoading, setIsLoading] = useState(false);
+  const [currentAnimation, setCurrectAnimation] = useState('idle')
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value})
@@ -119,7 +120,7 @@ const Contact = () => {
           }}
         >
           <directionalLight instensity={2.5} position={[0, 0, 1]} />
-          <ambientLight intensity={1} />
+          <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
             <Fox 
               position={[0.5, 0.35, 0]}
