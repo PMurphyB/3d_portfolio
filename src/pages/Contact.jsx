@@ -20,6 +20,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    setCurrentAnimation('walk')
 
     emailjs.send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -40,13 +41,14 @@ const Contact = () => {
       setForm({ name: '', email: '', message: '' });
     }).catch((error) => {
       setIsLoading(false);
+      setCurrentAnimation('idle');
       console.log(error);
       // Show error message
     })
   };
 
-  const handleFocus = () => {};
-  const handleBlur = () => {};
+  const handleFocus = () => setCurrectAnimation('walk');
+  const handleBlur = () => setCurrentAnimation('idle');
 
 
   return (
