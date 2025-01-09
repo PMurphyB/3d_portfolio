@@ -38,6 +38,10 @@ const Contact = () => {
       // Show success message
       // Hide an alert
 
+      setTimeout(() => {
+        
+      }, [3000])
+
       setForm({ name: '', email: '', message: '' });
     }).catch((error) => {
       setIsLoading(false);
