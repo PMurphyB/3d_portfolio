@@ -40,9 +40,9 @@ const Contact = () => {
 
       setTimeout(() => {
         setCurrectAnimation('idle')
+        setForm({ name: '', email: '', message: '' });
       }, [3000])
 
-      setForm({ name: '', email: '', message: '' });
     }).catch((error) => {
       setIsLoading(false);
       setCurrentAnimation('idle');
