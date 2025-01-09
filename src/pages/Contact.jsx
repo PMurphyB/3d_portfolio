@@ -39,7 +39,7 @@ const Contact = () => {
       // Hide an alert
 
       setTimeout(() => {
-        
+        setCurrectAnimation('idle')
       }, [3000])
 
       setForm({ name: '', email: '', message: '' });
