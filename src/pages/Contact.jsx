@@ -35,7 +35,7 @@ const Contact = () => {
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() => {
       setIsLoading(false);
-      // Show success message
+      // Show success message through hooks
       // Hide an alert
 
       setTimeout(() => {
