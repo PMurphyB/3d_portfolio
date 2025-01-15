@@ -36,7 +36,7 @@ const Contact = () => {
     ).then(() => {
       setIsLoading(false);
       // Show success message through hooks
-      // Hide an alert
+      // Hide an alert 
 
       setTimeout(() => {
         setCurrectAnimation('idle')
